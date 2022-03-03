@@ -25,5 +25,6 @@ public class DragAndDropTest {
         $("#column-b").shouldHave(Condition.text("A"));
 
         // первое измененение
+        // второе изменение
     }
 }
