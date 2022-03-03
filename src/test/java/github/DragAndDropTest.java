@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class DragAndDropTest {
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
         Configuration.browserSize = "1920x1080";
     }
@@ -23,5 +23,7 @@ public class DragAndDropTest {
         Thread.sleep(1000);
         $("#column-a").shouldHave(Condition.text("B"));
         $("#column-b").shouldHave(Condition.text("A"));
+
+        // первое измененение
     }
 }
